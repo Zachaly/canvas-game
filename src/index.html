@@ -5,12 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="score">Score: <span id="score">0</span></div>
     <canvas id="main-canvas">
 
     </canvas>
+
+    <div id="game-start">
+        <div>
+            <h1 id="final-score">0</h1>
+            <p>Points</p>
+            <button id="start">Start Game</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/classes.js"></script>
+    <script src="js/game-logic.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

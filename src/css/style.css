@@ -1,0 +1,55 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    overflow: hidden;
+}
+
+.score{
+    position: fixed;
+    top: 0;
+    color: antiquewhite;
+    margin: 5px;
+    user-select: none;
+    font-size: 20px;
+}
+
+#game-start div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    text-align: center;
+    width: 50%;
+    height: 200px;
+}
+
+#game-start{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#game-start h1{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0;
+}
+
+#game-start button{
+    background-color: blue;
+    color: aliceblue;
+    width: 90%;
+    font-size: 24px;
+    border: none;
+    margin: 5px; 
+    border-radius: 20px;   
+    padding: 5px;
+}
