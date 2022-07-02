@@ -14,6 +14,50 @@
     </canvas>
 
     <div id="game-start">
+
+        <div class="options">
+            <div>
+                <h2>Player size: <span id="player-size"></span></h2>
+                <button id="player-size-inc">Increase</button>
+                <button id="player-size-dec">Decrease</button>
+            </div>
+            <div>
+                <h2>Min enemy size: <span id="min-enemy-size"></span></h2>
+                <button id="min-enemy-size-inc">Increase</button>
+                <button id="min-enemy-size-dec">Decrease</button>
+            </div>
+            <div>
+                <h2>Max enemy size: <span id="max-enemy-size"></span></h2>
+                <button id="max-enemy-size-inc">Increase</button>
+                <button id="max-enemy-size-dec">Decrease</button>
+            </div>
+            <div>
+                <h2>Enemy velocity: <span id="enemy-velocity"></span></h2>
+                <button id="enemy-velocity-inc">Increase</button>
+                <button id="enemy-velocity-dec">Decrease</button>
+            </div>
+            <div>
+                <h2>Enemy spawn delay: <span id="enemy-spawn-delay"></span>s</h2>
+                <button id="enemy-spawn-delay-inc">Increase</button>
+                <button id="enemy-spawn-delay-dec">Decrease</button>
+            </div>
+            <div>
+                <h2>Projectile velocity: <span id="projectile-velocity"></span></h2>
+                <button id="projectile-velocity-inc">Increase</button>
+                <button id="projectile-velocity-dec">Decrease</button>
+            </div>
+            <div>
+                <h2>Projectile size: <span id="projectile-size"></span></h2>
+                <button id="projectile-size-inc">Increase</button>
+                <button id="projectile-size-dec">Decrease</button>
+            </div>
+            <div>
+                <h2>Projectile damage: <span id="projectile-damage"></span></h2>
+                <button id="projectile-damage-inc">Increase</button>
+                <button id="projectile-damage-dec">Decrease</button>
+            </div>
+        </div>
+
         <div>
             <h1 id="final-score">0</h1>
             <p>Points</p>
@@ -21,6 +65,7 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/gamesettings.js"></script>
     <script src="js/classes.js"></script>
     <script src="js/game-logic.js"></script>
     <script src="js/index.js"></script>

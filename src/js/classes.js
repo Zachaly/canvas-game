@@ -86,10 +86,12 @@ class Particle{
 
     update(){
         this.draw();
+        // particle gets slower with every update
         this.velocity.x *= 0.99;
         this.velocity.y *= 0.99;
         this.x += this.velocity.x;
         this.y += this.velocity.y;
+        // used to create fading effect
         this.alpha -= 0.005;
     }
 }

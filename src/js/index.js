@@ -1,19 +1,21 @@
-function addClickEvents(){
+// adds event for click on game start
+function addClickEvent(){
     window.addEventListener("click", (event) => {
         const angle = Math.atan2(event.clientY - canvas.height / 2, event.clientX - canvas.width / 2);
         const velocity = {
-            x: Math.cos(angle) * 3,
-            y: Math.sin(angle) * 3
+            x: Math.cos(angle) * 3 * projectileVelocityMultiplier,
+            y: Math.sin(angle) * 3 * projectileVelocityMultiplier
         };
     
-        const projectile = new Projectile(canvas.width / 2, canvas.height / 2, 7, "white", velocity);
+        const projectile = new Projectile(canvas.width / 2, canvas.height / 2, projectileSize, "white", velocity);
         projectiles.push(projectile);
     
     });
 }
 
+// resets player, projectiles and enemies
 function reset(){
-    player = new Player(canvas.width / 2, canvas.height / 2, 20, "green");
+    player = new Player(canvas.width / 2, canvas.height / 2, playerSize, "green");
     projectiles = [];
     enemies = [];
     particles = [];
@@ -28,7 +30,7 @@ const score = document.getElementById("score");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-let player = new Player(canvas.width / 2, canvas.height / 2, 20, "green");
+let player = new Player(canvas.width / 2, canvas.height / 2, playerSize, "green");
 let projectiles = [];
 let enemies = [];
 let particles = [];
@@ -40,8 +42,8 @@ startGameButton.addEventListener("click",() => {
     const container = document.getElementById("game-start");
     container.style.display = "none";
     animate();
-    addClickEvents();
+    addClickEvent();
     setInterval(() => {
         spawnEnemy();
-    }, 1000)
+    }, enemySpawnDelay)
 })
